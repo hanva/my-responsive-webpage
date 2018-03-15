@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 8fr 16fr 3fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+header{
+    width:100vw;
+    height:15vh;
+    background-color: aqua;
+}
+.fields{
+    background-image:url("fields.png");
+    z-index: 1;
+}
