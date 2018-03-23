@@ -27,6 +27,12 @@ section{
     right: 0;
     margin-right:2vw;
 }
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
 i{
     border: 2px solid white;
     padding: 10px;
@@ -270,6 +276,9 @@ footer ul li{
 .paddtext *{
     margin-top:2vh;
 }
+.padd i{
+    margin-left:2vw;
+}
 .singleblock{
     grid-column: 1/-1;
 }
@@ -293,6 +302,7 @@ footer{
 .formbutton{
     color: #FFF;
     margin-top:1em;
+    margin-bottom:1em;
     height:50px;
     font-size: 1em;
     width:200px;
@@ -361,11 +371,13 @@ footer{
         display: none;
     }
         .imagecontener img{
-            height: 40vh;
-        }
-        
+            height: 30vh;
+        }   
 }
 @media screen  and (orientation:landscape) {
+    .defaut{
+        padding-bottom:10vh;
+    }
     .visit{
         width:20vw;
     }
