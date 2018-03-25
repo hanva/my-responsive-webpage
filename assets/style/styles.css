@@ -23,6 +23,7 @@ section{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 i{
+    opacity: 1;
     border: 2px solid white;
     padding: 10px;
 }
@@ -91,6 +92,7 @@ i{
 }
 .headernav li a:hover{
     color: #00C0FF;
+    opacity: 1;
     border: 2px solid #4bcaff;
 }
 .color{
@@ -172,7 +174,7 @@ h4{
     padding-right:40px;
     background:none;
     border:1.2px solid black; 
-    margin-bottom:5vh;
+    margin-bottom:2vh;
 }
 .visit a{
     color: black;
