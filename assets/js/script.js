@@ -9,11 +9,12 @@ function changePhotos(e) {
         images[i].classList.remove("none");
         images[i].classList.remove("block");
     }
-    var old = document.querySelector(".blue");
-    if (old !== undefined) {
-        old.classList.remove("blue");
+    var old = document.querySelector(".menuborder");
+    if (old !== null) {
+        old.classList.remove("menuborder");
     }
     if (e === ".Random") {
+        images[7].src = "./assets/img/portfolio_photo" + (1 + getRandomInt(8)) + ".png";
         for (var i = 0; i < random; i++) {
             images[i].src = "./assets/img/portfolio_photo" + random + ".png";
             random++;
@@ -29,10 +30,19 @@ function changePhotos(e) {
         images[7].classList += " none";
     }
     else if (e === ".Macro") {
-        alert("ah");
+        for (var i = 4; i < images.length; i++) {
+            images[i].classList += " none";
+        }
+
     }
     else if (e === ".Panoramas") {
-        alert(":(");
+        for (var i = 0; i < images.length; i++) {
+            images[i].classList += " none";
+        }
+        images[1].src = "./assets/img/portfolio_photo4.png";
+        images[2].src = "./assets/img/portfolio_photo6.png";
+        images[1].classList.remove("none");
+        images[2].classList.remove("none");
     }
     else {
         for (var i = 0; i < images.length; i++) {
@@ -40,7 +50,7 @@ function changePhotos(e) {
         }
     }
     e = document.querySelector(e);
-    e.classList += ' blue';
+    e.classList += ' menuborder';
 }
 window.onload = function () {
     document.querySelector(".All").onclick = function () {

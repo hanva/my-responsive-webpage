@@ -22,6 +22,10 @@ section{
     padding: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+i{
+    border: 2px solid white;
+    padding: 10px;
+}
 .fa-quote-right{
     position: absolute;
     right: 0;
@@ -30,12 +34,8 @@ section{
 .block{
     display: block;
 }
-.none{
+.none{ 
     display: none;
-}
-i{
-    border: 2px solid white;
-    padding: 10px;
 }
 .blueeasy{
     padding-top:3vh;
@@ -163,6 +163,7 @@ h4{
     background-color: black;
 }
 .visit{
+    width:90vw;
     opacity: 0.45;
     font-weight: bold;
     padding-top:10px;
@@ -171,6 +172,9 @@ h4{
     padding-right:40px;
     background:none;
     border:1.2px solid black; 
+}
+.visit a{
+    color: black;
 }
 .row{
     flex-direction: row;
@@ -253,24 +257,47 @@ footer ul li{
     margin-top:5vh;
     margin-bottom: 5vh;
 }
-.imagecontener  img{
+.imagecontener  .imag{
     height: 25vh;
     transition: 1s;
 }
-.imagecontener :hover{
-    background-color: black;
+.imagecontener .imag:hover{
+background-color: black;
+display: block;
 }
 .imagecontener{
     justify-content: space-around;
 }
+.cross{
+    display: none;
+    width:40px;
+    height:40px;
+    margin-top:-26%;
+    margin-left:26%;
+    z-index: 2;
+}
+.imagecontener .cross:hover{
+    display: block;
+}
 .menu li{
     font-size:4vw;
-    color: #515f67;
     cursor: pointer;
-    margin-right:4vw;
+    margin-right:1vw;
     transition: 0.5s;
 }
 .menu li:hover{
+    color: #00C0FF;
+}
+.menu li{
+    margin-top:3px;
+    padding:1px;
+}
+.menutransparent{
+    color: #515f67;
+    border :4px solid transparent;
+}
+.menuborder{
+    border :2px solid #00C0FF;
     color: #00C0FF;
 }
 .paddtext *{
@@ -284,6 +311,9 @@ footer ul li{
 }
 .headernav{
     display: none;
+}
+.getback{
+    margin-left:-5vw;
 }
 .blackcolor{
     color:    #555;
@@ -327,11 +357,15 @@ footer{
 .rightli{
     margin-left:40vw;
 }
-.videoconterner{
-    width: 100%;
-    min-height:250px;
+.videoconterner iframe{
+    border: none;
+  width: 100%;
+  min-height:250px;
 }
 @media screen and (min-width: 624px) {
+    .getback{
+        margin-left:-3vw;
+    }
     .title{
         font-size: 2em;
     }
@@ -370,11 +404,14 @@ footer{
     .discover{
         display: none;
     }
-        .imagecontener img{
+        .imagecontener.imag{
             height: 30vh;
         }   
 }
 @media screen  and (orientation:landscape) {
+    .getback{
+        margin-left:-1vw;
+    }
     .defaut{
         padding-bottom:10vh;
     }
@@ -421,7 +458,7 @@ footer{
     .big{
         width:70vw;
     }
-    .imagecontener img{
+    .imagecontener .imag{
         height: 20vh;
     }   
 }
@@ -452,7 +489,7 @@ footer{
         padding-top:8vh;
         padding-bottom:8vh;
     }
-    .imagecontener img{
+    .imagecontener.imag{
         height: 30vh;
     }
     .littlemargin{
@@ -461,8 +498,7 @@ footer{
     .bar{
         width:2vw;
     }
-    .imagecontener img{
-        height: 35vh;
+    .getback{
+        margin-left:-0.5vw;
     }
-    
 }
