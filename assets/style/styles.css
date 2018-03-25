@@ -172,6 +172,7 @@ h4{
     padding-right:40px;
     background:none;
     border:1.2px solid black; 
+    margin-bottom:5vh;
 }
 .visit a{
     color: black;
@@ -257,27 +258,15 @@ footer ul li{
     margin-top:5vh;
     margin-bottom: 5vh;
 }
-.imagecontener  .imag{
+.imagecontener  img{
     height: 25vh;
     transition: 1s;
 }
-.imagecontener .imag:hover{
+.imagecontener img:hover{
 background-color: black;
-display: block;
 }
 .imagecontener{
     justify-content: space-around;
-}
-.cross{
-    display: none;
-    width:40px;
-    height:40px;
-    margin-top:-26%;
-    margin-left:26%;
-    z-index: 2;
-}
-.imagecontener .cross:hover{
-    display: block;
 }
 .menu li{
     font-size:4vw;
@@ -404,7 +393,7 @@ footer{
     .discover{
         display: none;
     }
-        .imagecontener.imag{
+        .imagecontener img{
             height: 30vh;
         }   
 }
@@ -458,7 +447,7 @@ footer{
     .big{
         width:70vw;
     }
-    .imagecontener .imag{
+    .imagecontener img{
         height: 20vh;
     }   
 }
@@ -489,8 +478,8 @@ footer{
         padding-top:8vh;
         padding-bottom:8vh;
     }
-    .imagecontener.imag{
-        height: 30vh;
+    .imagecontener img{
+        height: 35vh;
     }
     .littlemargin{
         margin-top:5vh;
